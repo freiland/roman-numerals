@@ -1,6 +1,7 @@
 const I = 1
 const V = 5
 const X =10 
+
 valueArr = ["I"=1, "V"=5, "X"=10, "L" = 50, "C"=100, "D"=500, "M"=1000];
 
 function romanLet(letter) {
@@ -12,6 +13,7 @@ function romanLet(letter) {
   }
   }
 }
+function roman(letter) {
 const roman = "I"
 roman.replace(/I*/g, "1")
 
@@ -23,16 +25,14 @@ function oneToThree(number) {
   let oneArr = [];
   let sumArr = [0]
   
-  while (sumArr <= number) {
+  while (sumArr < number) {
     oneArr.push(1);
-  }
-  sumArr = oneArr.reduce(function(a,b) {
-    return a+b;
-  });
-  
-  console.log(oneArr)
+    sumArr = oneArr.reduce(function(a,b) {
+      return a+b;})
+    }
 
-}
+  console.log(oneArr)
+};
 
 
 
